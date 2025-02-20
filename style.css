@@ -1,0 +1,283 @@
+/* ✅ تنسيقات عامة */
+body {
+    font-family: Arial, sans-serif;
+    direction: rtl;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* ✅ الوضع الداكن */
+.dark-mode {
+    background-color: #222;
+    color: #fff;
+}
+
+/* ✅ شريط التنقل */
+header {
+    background: #007bff;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* ✅ زر الوضع الداكن */
+#toggle-dark-mode {
+    padding: 10px;
+    border: none;
+    background: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* ✅ قائمة التنقل */
+nav {
+    background: #333;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* ✅ الأقسام */
+section {
+    padding: 20px;
+    margin: 20px 0;
+    border-bottom: 2px solid #ddd;
+}
+
+/* ✅ نموذج التعليقات */
+#commentForm {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+}
+
+#commentForm input, #commentForm textarea {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+}
+
+#commentForm button {
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* ✅ صندوق التعليقات */
+#comments-container {
+    width: 50%;
+    margin: auto;
+}
+
+.comment-box {
+    background: white;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dark-mode .comment-box {
+    background: #444;
+}
+
+/* ✅ أزرار التعليقات */
+.comment-actions button {
+    margin-left: 5px;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.edit-btn {
+    background: orange;
+    color: white;
+}
+
+.delete-btn {
+    background: red;
+    color: white;
+}
+
+/* ✅ أزرار شريط التنقل */
+.header-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+#login-button {
+    padding: 10px 15px;
+    border: none;
+    background: green;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#login-button:hover {
+    background: darkgreen;
+}
+
+/* ✅ تنسيق نافذة تسجيل الدخول */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    width: 300px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    z-index: 1000;
+}
+
+.popup.hidden {
+    display: none;
+}
+
+/* ✅ تحسين الأزرار */
+button {
+    margin: 10px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* ✅ إصلاح نافذة تسجيل الدخول */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* ✅ إصلاح زر تسجيل الدخول */
+#login-button {
+    display: inline-block;  /* ✅ تصحيح المشكلة */
+}
+/* ✅ تحسين نافذة تسجيل الدخول */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    width: 350px;  /* تكبير النافذة قليلاً */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
+    z-index: 1001; /* جعلها فوق العناصر الأخرى */
+}
+
+/* ✅ تحسين خلفية تغطية الصفحة عند ظهور النافذة */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* لون شفاف لتغطية الصفحة */
+    display: none; /* مخفي افتراضيًا */
+    z-index: 1000;
+}
+
+/* ✅ تحسين إدخالات تسجيل الدخول */
+.popup input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: right;
+}
+
+.popup button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* ✅ تحسين زر تسجيل الدخول */
+#submitLogin {
+    background: #007bff;
+    color: white;
+}
+
+#submitLogin:hover {
+    background: #0056b3;
+}
+
+/* ✅ تحسين زر الإلغاء */
+#closePopup {
+    background: red;
+    color: white;
+}
+
+#closePopup:hover {
+    background: darkred;
+}
+
+/* ✅ إخفاء النافذة المنبثقة */
+.hidden {
+    display: none;
+}
