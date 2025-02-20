@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasan Tube</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- شريط التنقل -->
+    <header>
+        <div class="logo">Hasan Tube</div>
+        <div class="header-buttons">
+            <button id="login-button">تسجيل الدخول</button>
+            <button id="toggle-dark-mode">🌙 الوضع الداكن</button>
+        </div>
+    </header>
+
+    <!-- نافذة تسجيل الدخول -->
+    <div id="loginPopup" class="popup hidden">
+        <div class="popup-content">
+            <h2>تسجيل الدخول</h2>
+            <label>اسم المستخدم:</label>
+            <input type="text" id="username" placeholder="أدخل اسم المستخدم">
+            <label>كلمة المرور:</label>
+            <input type="password" id="password" placeholder="••••••">
+            <button id="submitLogin">تسجيل الدخول</button>
+            <button id="closePopup">إلغاء</button>
+        </div>
+    </div>
+
+    <!-- قائمة الأقسام -->
+    <nav>
+        <ul>
+            <li><a href="#server">السيرفر</a></li>
+            <li><a href="#game">اللعبة</a></li>
+            <li><a href="#videos">الفيديوهات</a></li>
+            <li><a href="#opinions">الآراء</a></li>
+        </ul>
+    </nav>
+
+    <!-- الأقسام -->
+    <section id="server">
+        <h2>قسم السيرفر</h2>
+        <p>هنا تفاصيل السيرفر...</p>
+        <p>معلومات عن السيرفر : https://youtu.be/oM41ZNcLESM?si=XABYS80o_MOvSV8C </p>
+    </section>
+
+    <section id="game">
+        <h2>قسم اللعبة</h2>
+        <p>معلومات عن اللعبة...</p>
+<p>اللعبة في حالة صيانة...</p>
+    </section>
+
+    <section id="videos">
+        <h2>قسم الفيديوهات</h2>
+        <p>هنا ستجد فيديوهات القناة...</p>
+        <p> افضل فيديو : https://youtu.be/OGWdCM0FbXU?si=IbElhdI6xpRY9HrL </p>
+    </section>
+
+    <section id="opinions">
+        <h2>قسم الآراء <span id="comment-count">(0)</span></h2>
+        <p>شارك برأيك حول القناة والمحتوى.</p>
+
+        <!-- نموذج التعليق -->
+        <form id="commentForm">
+            <input type="text" id="name" placeholder="اسم المستخدم">
+            <textarea id="comment" placeholder="اكتب تعليقك..."></textarea>
+            <button type="submit">إرسال</button>
+        </form>
+
+        <!-- قائمة التعليقات -->
+        <div id="comments-container"></div>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
